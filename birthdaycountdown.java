@@ -99,6 +99,7 @@ public class birthdaycountdown {
 		else if (dateutypedin2 == diesermonat && dateutypedin3 <localdayy  ) {System.out.println ("Your birthday is in " + Monate3 + " months and " + Tage3 + " days away.");
 		}
 		else { System.out.println ("error");}
+		      s.close();
 
 
 	}}
