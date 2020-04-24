@@ -37,7 +37,22 @@ public class birthdaycountdown {
 		int Monate = p.getMonths();
 		int Tage = p.getDays();
 
-		System.out.println ("you are " + Jahre+ " years, "+ Monate + " months and "+ Tage + " days old.");
+		if (Tage>0 && Monate>0) {
+			System.out.println ("You are " + Jahre+ " years, "+ Monate + " months and "+ Tage + " days old.");}
+		else if (Tage ==0 && Monate >0) {
+			System.out.println ("You are "+ Jahre + " years and " + Monate + " months old.");
+		}
+		else if (Tage>0 && Monate==0) {
+			System.out.println ("You are "+ Jahre + " years and" + Tage + " days old.");
+		}
+
+		else if (Tage ==0 && Monate ==0) {
+			System.out.println ("You are exactly "+ Jahre +" years old.");
+		}
+		if (Jahre<=17) {
+			System.out.println ("Therefore, you're underage");
+		}
+		else { System.out.println ("Therefore, you're of age ");
 
 		if (Jahre<=17) {
 			System.out.println ("Therefore, you're underage");
@@ -52,8 +67,8 @@ public class birthdaycountdown {
 		int Monate2 = p2.getMonths();
 		int Tage2 = p2.getDays();
 		int diesermonat = localDate.getMonthValue();
-		int nächstesjahr= diesesjahr + 1;
-		LocalDate geburtstag2 = LocalDate.of (nächstesjahr, dateutypedin2, dateutypedin3);
+		int nÃ¤chstesjahr= diesesjahr + 1;
+		LocalDate geburtstag2 = LocalDate.of (nÃ¤chstesjahr, dateutypedin2, dateutypedin3);
 		Period p3 = Period.between(localDate, geburtstag2);
 		int Jahre3= p3.getYears();
 		int Monate3= p3.getMonths();
