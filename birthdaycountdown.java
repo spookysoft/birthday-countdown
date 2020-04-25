@@ -15,15 +15,6 @@ public class birthdaycountdown {
 		int localdayy= localDate.getDayOfMonth();
 		int dateutypedin1 = s.nextInt();
 
-		if (dateutypedin1 == 69) {
-			System.out.println ("haha ur a funny one");
-
-		}
-		else if (dateutypedin1 == 420) {
-			System.out.println ("blaze it");
-		}
-
-
 		System.out.println ("What month were you born in?");
 		int dateutypedin2= s.nextInt();
 
